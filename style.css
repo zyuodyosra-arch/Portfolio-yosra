@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --clr-background: rgb(247, 244, 244);
+  --clr-gray: rgb(119, 114, 114);
+  --font-main: "Montserrat", sans-serif;
+   --primary-color: #3a435d;
+    --secondary-color: #519cf9;
+  --accent-color: #0071ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind Madurai", sans-serif;
+  overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+.text-primary{
+    color: var(--secondary-color);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+
+}
+.btn-primary{
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover{
+    background-color: #15a076;
+}
+.text-primary{
+    color: var(--secondary-color);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+
+}
+
+.wrapper {
+  background-color: var(--clr-background);
+}
+
+/* -------------------------Header/Navbar */
+header{
+    background: var(--bg-primary);
+    height: 100vh;
+}
+header .nav-bar{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+ 
+}
+ #logo{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+#logo:hover{
+    color: var(--secondary-color);
+        cursor: pointer;
+}
+header .nav-bar nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+}
+header .nav-bar nav ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+header .nav-bar nav ul a{
+    margin: 0 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: 0.5s ease;
+}
+header .nav-bar nav ul a:hover{
+        color: var(--secondary-color);
+        cursor: pointer;
+    }
+
+.header-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem 0;
+    height: 100%;
+    align-items: center;
+}
+.header-content .content-text{
+    margin-bottom: 5rem;
+} 
+.content-text p span{
+    font-weight: 600;
+    font-size: 20px;
+}
+.content-text h1{
+    font-size: 60px;
+    color: var(--primary-color);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+.content-text .title{
+    font-size: 20px;
+     color: var(--primary-color);
+     font-weight: 500;
+     margin: 10px 0;
+
+}
+.content-text .social{
+    margin: 1rem 0 2rem;
+}
+.content-text .social a i{
+    font-size: 18px;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.content-text .social a i:hover{
+    transform: scale(0.85);
+
+}
+.header-content img{
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* End of Header/Navbar--------------------- */
+
+/* -------------------------About */
+
+section{
+    padding: 6rem 0;
+}
+.container h2{
+  font-size: 38px;
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+.container hr{
+    width: 100px;
+    height: 3px;
+    border: none;
+    background-color: var(--secondary-color);
+    margin: 5px auto 0;
+}
+.about-content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+}
+.about-content .col-1 h3{
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.about-content .col-1 p{
+    color: var(--gray);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+.about-content .col-2 p{
+    color: var(--gray);
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+/* End of About--------------------- */
+
+
+/* -------------------------Skills */
+.skils{
+    background-color: var(--clr-background);
+}
+.skils .container h2{
+    color: var(--primary-color);
+}
+.skils .skils-contant{
+    background-color: var(--clr-background);
+    margin-top: 2rem;
+    padding: 2rem;
+   
+}
+.skils .skils-contant .row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+}
+.skils .container .row .itmes{
+    background-color: #000;
+    color: #fff;
+    margin: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+.skils .container .row .itmes:hover{
+    box-shadow: 10px 10px 10px #5c7db1;
+     transform: scale(0.85);
+     cursor: pointer;
+}
+.skils .container .row .itmes img{
+    max-width: 80px;
+    object-fit: cover;
+}
+.skils .container .row .itmes p{
+    color: #fff;
+    padding-top: 5px;
+}
+/* End of Skills--------------------- */
+
+/* -------------------------Contact */
+
+#contact{
+    background-color: #00f4ab0c;
+    padding: 4rem 0;
+}
+#contact .row{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    background-color: #fff;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+#contact .row input,
+#contact .row textarea {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #00f4ab0c;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+/* End of Skills--------------------- */
+
+#footer{
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+.scrol-up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--secondary-color);
+    padding: 5px 12px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
